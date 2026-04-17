@@ -7,53 +7,68 @@
 </head>
 <body>
 
-<header>
-  <h1>🌍 My Travel Blog</h1>
-  <p>Road trips, itineraries & stories</p>
+<!-- HERO SECTION -->
+<header class="hero">
+  <div class="overlay">
+    <h1>Explore the World</h1>
+    <p>Road trips • Itineraries • Travel Stories</p>
+  </div>
 </header>
 
-<nav>
-  <a href="#">Home</a>
-  <a href="#">Road Trips</a>
-  <a href="#">Itineraries</a>
-  <a href="#">About</a>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo">MyTravel</h2>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Destinations</a>
+    <a href="#">Road Trips</a>
+    <a href="#">About</a>
+  </div>
 </nav>
 
-<section class="blog-container">
+<!-- FEATURED POSTS -->
+<section class="featured">
+  <h2>Featured Adventures</h2>
 
-  <div class="post">
-    <h2>🚗 Road Trip Across California</h2>
-    <p>From San Francisco to Los Angeles — best stops, food, and views.</p>
-    <button onclick="readMore('post1')">Read More</button>
-    <p id="post1" class="hidden">
-      Full itinerary: SF → Big Sur → Santa Barbara → LA. Amazing coastal drive!
-    </p>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?california,roadtrip">
+      <div class="card-content">
+        <h3>California Coastal Drive</h3>
+        <p>Epic road trip from SF to LA</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?japan,travel">
+      <div class="card-content">
+        <h3>7 Days in Japan</h3>
+        <p>Tokyo, Kyoto & Osaka itinerary</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?europe,travel">
+      <div class="card-content">
+        <h3>Backpacking Europe</h3>
+        <p>Budget-friendly guide</p>
+      </div>
+    </div>
+
   </div>
-
-  <div class="post">
-    <h2>🇯🇵 7 Days in Japan</h2>
-    <p>Tokyo, Kyoto, Osaka travel plan.</p>
-    <button onclick="readMore('post2')">Read More</button>
-    <p id="post2" class="hidden">
-      Day 1-3 Tokyo, Day 4-5 Kyoto, Day 6 Osaka, Day 7 return.
-    </p>
-  </div>
-  
-  <div class="post">
-  <h2>🌍 Your New Trip</h2>
-  <p>Short description...</p>
-  <button onclick="readMore('post3')">Read More</button>
-  <p id="post3" class="hidden">
-    Full story here...
-  </p>
-</div>
-
 </section>
 
+<!-- ABOUT -->
+<section class="about">
+  <h2>About Me</h2>
+  <p>I share real travel experiences, detailed itineraries, and road trip guides from around the world.</p>
+</section>
+
+<!-- FOOTER -->
 <footer>
   <p>© 2026 My Travel Blog</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
