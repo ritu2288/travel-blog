@@ -1,47 +1,85 @@
 body {
-  font-family: Arial;
   margin: 0;
-  background: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
 }
 
-header {
-  background: #2c3e50;
+/* HERO */
+.hero {
+  height: 80vh;
+  background: url('https://source.unsplash.com/1600x900/?travel,landscape') no-repeat center/cover;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.4);
+  height: 100%;
   color: white;
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-nav {
-  background: #34495e;
-  padding: 10px;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-}
-
-.blog-container {
-  padding: 20px;
-}
-
-.post {
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
   background: white;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* FEATURED */
+.featured {
+  padding: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
   padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
 }
 
-button {
-  background: #3498db;
+/* ABOUT */
+.about {
+  background: #f8f8f8;
+  padding: 50px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
   color: white;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-}
-
-.hidden {
-  display: none;
+  text-align: center;
+  padding: 20px;
 }
